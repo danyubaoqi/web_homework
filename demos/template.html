@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload</title>
+    <style>
+        body {
+            padding: 50px;
+            font: 14px Helvetica, Arial;
+        }
+    </style>
+</head>
+<body>
+<h1>File Upload</h1>
+<p>Try uploading multiple files at a time.</p>
+<form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" multiple>
+    <input type="submit" value="Upload">
+</form>
+<div>
+    <!--  如果存在（上传之后）图片，则显示-->
+    <img src="../public/images/test.png" height="200" width="150">
+</div>
+</body>
+</html>
